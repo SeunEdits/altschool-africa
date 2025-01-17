@@ -1,0 +1,54 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ccb3ff;
+    align-content: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.container .card {
+    max-width: 450px;
+    max-height: 800px;
+    background-color:#eee;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: relative;
+
+    .text {
+        padding: 2em;
+    }
+    
+    img {
+        width: 450px;
+        height: 250px;
+        object-fit: fill;
+        border-radius: 15px 15px 0 0;       
+    }
+
+    h2 {
+        display: inline-block;
+        background: yellow;
+        padding: 5px 20px 5px 10px;
+        border-radius: 15px 50px 50px 15px;
+        position: absolute;
+        top: 5%;
+        left: -25px;
+    }
+
+    h1 {
+        font-size: 2em;
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+    
+    p{
+        margin-top: 1em;
+    }
+}
