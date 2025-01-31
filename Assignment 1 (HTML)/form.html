@@ -1,53 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/form.css" />
     <title>My Bio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul><a href="./index.html">My Bio</a></ul>
-            <ul><a href="./form.html">Form</a></ul>
-            <ul><a href="../Assignment 2 (HTML)/table.html">Our Courses</a></ul>
-            <ul><a href="../Assignment 2 (HTML)/media.html">Media</a></ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="./index.html">My Bio</a></li>
+          <li><a href="./form.html">Form</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <h1>Sign Up</h1>
-        <p>Take the next steps to apply at AltSchool Africa</p>
-        <form action="#">
-            <label for="firstName">First Name: </label>
-            <input type="text" name="firstName" placeholder="Enter first name">
-            <label for="lastName">Last Name: </label>
-            <input type="text" name="lastName" placeholder="Enter last name">
-            <br><br>
-            <label for="gender">Gender: </label>
-            <input type="text" name="lastName" placeholder="Select gender">
-            <label for="dob">Date of Birth: </label>
-            <input type="date" name="dob" placeholder="YYYY-MM-DD">
-            <br><br>
-            <label for="email">Email Address: </label>
-            <input type="email" name="email" placeholder="Enter email Address">
-            <label for="phoneNumber">Phone Number: </label>
-            <input type="tel" name="phoneNumber" placeholder="08154387000">
-            <br><br>
-            <label for="country">Country: </label>
-            <input type="text" name="state/city" placeholder="Enter your state of residence">
-            <label for="hdyhau">How did you hear about us?</label>
-            <input type="text" name="hdyhau" placeholder="Select channel">
-            <br><br>
-            <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Enter password">
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" name="confirmPassword">
-            <br><br>
-            <br><br>
-            <p>By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.</p>
-            <br><br>
-            <input type="submit" value="Submit -->">
-        </form>
+      <div class="container">
+        <div class="left">
+            <div class="leftContent">
+                <h1>Learn highly sought after skills without hassle.</h1>
+                <br>
+                <p>2025 &#169; Olagunju Oluwaseun. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="right">
+          <p class="alignRight">
+            <strong>Already on AltSchool? <a href="#">Sign In!</a></strong>
+          </p>
+          <div class="form">
+            <h1>Sign Up</h1>
+            <p>Take the next steps to apply at AltSchool Africa</p>
+            <br />
+            <form action="#">
+              <div class="mainform">
+                <label for="firstName">First Name </label>
+                <label for="lastName">Last Name </label>
+                <input type="text" name="firstName" placeholder="First Name" />
+                <input type="text" name="lastName" placeholder="Last Name" />
+                <label for="email">Email Address </label>
+                <label for="gender">Gender </label>
+                <input type="email" name="email" placeholder="Email" />
+                <input type="text" name="gender" placeholder="Select gender" />
+                <label for="dob">Date of Birth </label>
+                <label for="phoneNumber">Phone Number </label>
+                <input type="date" name="dob" placeholder="dd/mm/yyyy" />
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  placeholder="Phone Number"
+                />
+                <label for="country">Country of Residence </label>
+                <label for="state">State of Residence </label>
+                <input
+                  type="text"
+                  name="country"
+                  placeholder="Country of Residence"
+                />
+                <input
+                  type="text"
+                  name="state"
+                  placeholder="State of Residence"
+                />
+                <label for="password">Password</label>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="password" placeholder="Password" />
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  placeholder="Confirm Password"
+                />
+                <label for="hdyhau" class="doubleSpace"
+                  >How did you hear about us?</label
+                >
+                <input
+                  type="text"
+                  name="hdyzhau"
+                  placeholder="Optional: Let us know how you found us"
+                  class="doubleSpace"
+                />
+              </div>
+              <br />
+              <p>
+                By clicking continue, I agree to
+                <a href="#">Terms of Use</a> and acknowledge that I have read
+                the <a href="#">Privacy Policy</a>.
+              </p>
+              <br />
+              <br />
+              <input type="submit" value="Submit -->" class="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

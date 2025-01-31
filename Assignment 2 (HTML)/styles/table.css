@@ -1,0 +1,64 @@
+:root {
+    font-size: 16px;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 252, 248);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+header nav {
+    width: fit-content;
+    margin: auto;
+    vertical-align: middle;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+    text-align: center;
+    height: fit-content;
+}
+
+a {
+    text-decoration: none;
+    color: #0367F2;
+}
+
+main {
+    width: 100%;
+}
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 1px solid #0367F2; */
+}
+
+main table th,td {
+    text-align: left;
+    padding-left: 15px;
+}
+
+main table tr {
+    line-height: 3em;
+    border-bottom: 1px solid #0367F2;
+}
+
+main table tr th:nth-child(1),td:nth-child(1) {
+    border-right: 1px solid #0367F2;
+}

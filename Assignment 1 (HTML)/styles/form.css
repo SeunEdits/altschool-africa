@@ -1,0 +1,108 @@
+:root {
+    font-size: 16px;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 252, 248);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+header nav {
+    width: fit-content;
+    margin: auto;
+    vertical-align: middle;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+    text-align: center;
+    height: fit-content;
+}
+
+a {
+    text-decoration: none;
+    color: #0367F2;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .left{
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.container .left .leftContent {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container .right {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container .right .form {
+    width: 800px;
+    height: fit-content;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.alignRight {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.container .right .mainform{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+}
+
+.container .right .mainform input{
+    height: 40px;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    padding: 0 15px;
+    outline: 0;
+}
+
+.container .right .mainform input:focus{
+    border: 2px solid #0367F2;
+}
+
+
+.container .right form .doubleSpace {
+    grid-column: span 2;
+}
+
+.container .right form .submit {
+    width: 800px;
+    height: 50px;
+    border: 1px solid #0367F2;
+    border-radius: 5px;
+    background-color: #0367F2;
+    color: #fff;
+    align-items: center;
+}
